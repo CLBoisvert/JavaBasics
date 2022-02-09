@@ -9,13 +9,20 @@ public class SayHello {
         Scanner scanner = new Scanner(System.in);
 
         //now ask the user a question
-        System.out.println("What is your name?");
+        System.out.println("What is your first name?");
 
         //read users input, and store it in a variable
-        String userName = scanner.nextLine();
+        String userFirstName = scanner.nextLine();
+
+        //now ask for last name
+        System.out.println("What is your last name?");
+
+        //variable for user last name
+        String userLastName = scanner.nextLine();
 
         //display message with user input
-        System.out.println("Nice to meet you " + userName);
-
+        System.out.println(userFirstName);
+        System.out.println("Your last name is " + userLastName);
+        System.out.println(userFirstName + userLastName + " it is nice to meet you");
     }
 }
