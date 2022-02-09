@@ -23,6 +23,6 @@ public class SayHello {
         //display message with user input
         System.out.println(userFirstName);
         System.out.println("Your last name is " + userLastName);
-        System.out.println(userFirstName + userLastName + " it is nice to meet you");
+        System.out.println(userFirstName + " " + userLastName + " it is nice to meet you");
     }
 }
