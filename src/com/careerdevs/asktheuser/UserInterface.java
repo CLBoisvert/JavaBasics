@@ -17,12 +17,16 @@ public class UserInterface {
         String userName = scanner.nextLine();
 
         System.out.println("What is your age?");
-        String userAge = scanner.nextLine();
+        int userAge = scanner.nextInt();
+        scanner.nextLine();
 
         System.out.println("What is your day of birth?");
         String userDOB = scanner.nextLine();
 
-        System.out.println("Hello, " + userName + ". You were born " + userDOB + " making you " + userAge + " years old.");
+        //define user variable
+        User generatedUser = new User(userName,userAge,userDOB);
+
+        System.out.println(generatedUser);
     }
 }
 //take user input and create an instance of the User class using that data
